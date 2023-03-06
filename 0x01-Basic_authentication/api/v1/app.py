@@ -33,7 +33,7 @@ def unauthorized(error):
 @app.errorhandler(403)
 def forbidden(error):
     """
-    Error handler for 401 status code.
+    Error handler for 403 status code.
     Returns a JSON response with error message and status code 403.
     """
     return jsonify({'error': 'Forbidden'}), 403
