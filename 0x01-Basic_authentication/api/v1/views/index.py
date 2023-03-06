@@ -30,6 +30,6 @@ def stats() -> str:
 def unauthorized() -> str:
     """ GET /api/v1/unauthorized
     Return:
-      - a 401 error using abort()
+      - This endpoint must raise a 401 error by using abort
     """
     abort(401)
